@@ -11,6 +11,18 @@ class Employee(object):
 data=open('data.txt','a')
 name_input = raw_input("name> ")
 hol_allowance_input = input ("annual allowance days> ")
+hours_per_week = input ("Hours per week >")
+days_per_week = input ("Days worked per week")
+company_entitlement = input ("Annual entitlement >")
+employee_entitlement = days_per_week / 5 * company_entitlement
+print "employe entitlement" employee_entitlement
+
+
+
+
+
+
+
 employee = Employee(name_input,hol_allowance_input)
 employee.add_hol(1)
 
